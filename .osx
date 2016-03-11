@@ -129,6 +129,11 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
+# Custom additional settings
+
+# Disable window resize animation
+defaults write -g NSWindowResizeTime -float 0.001
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
